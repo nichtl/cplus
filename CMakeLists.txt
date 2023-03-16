@@ -1,0 +1,33 @@
+cmake_minimum_required(VERSION 3.22)
+project(cppLearning)
+
+set(CMAKE_CXX_STANDARD 14)
+
+include_directories(cpp_puls_memory_area_model/global_area)
+
+
+add_executable(test test.cpp)
+
+add_executable(global_area cpp_puls_memory_area_model/global_area/global_area.cpp)
+add_executable(stack_area cpp_puls_memory_area_model/stack_area/stack_area.cpp)
+add_executable(heap_area cpp_puls_memory_area_model/heap_area/heap_area.cpp)
+add_executable(reference cpp_puls_memory_area_model/reference/reference.cpp)
+add_executable(func_promote cpp_puls_memory_area_model/function/func_promote.cpp)
+add_executable(func_placeholer cpp_puls_memory_area_model/function_placeholder/func_placeholer.cpp)
+add_executable(func_overload cpp_puls_memory_area_model/function_overload/func_overload.cpp)
+add_executable(circle cpp_puls_memory_area_model/object/circle/circle.cpp)
+add_executable(cube cpp_puls_memory_area_model/object/cube/cube.cpp)
+add_executable(point_circle cpp_puls_memory_area_model/object/point_circle/point_circle.cpp)
+add_executable(static_func cpp_puls_memory_area_model/static_func/static_func.cpp)
+
+add_executable(member_variable_func_position cpp_puls_memory_area_model/static_func/member_variable_func_position.cpp)
+
+add_executable(cpp_this cpp_puls_memory_area_model/cpp_this/cpp_this.cpp)
+add_executable(null_point cpp_puls_memory_area_model/null_point/null_point.cpp)
+add_executable(cpp_friend cpp_puls_memory_area_model/cpp_friend/cpp_friend.cpp)
+add_executable(operateOverLoad cpp_puls_memory_area_model/operator_overload/operateOverLoad.cpp)
+add_executable(func_operator_overload cpp_puls_memory_area_model/func_operator_overload/func_operator_overload.cpp)
+add_executable(object_extends cpp_puls_memory_area_model/object_extends/object_extends.cpp)
+add_executable(extends_model cpp_puls_memory_area_model/object_extends/extends_model.cpp)
+add_executable(extend_construct_deconstruct_sort cpp_puls_memory_area_model/object_extends/extend_construct_deconstruct_sort.cpp)
+add_executable(extends_same_name_membe_property cpp_puls_memory_area_model/object_extends/extends_same_name_membe_property.cpp)
