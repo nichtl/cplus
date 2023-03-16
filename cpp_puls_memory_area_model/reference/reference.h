@@ -3,17 +3,17 @@
 //
 #include "iostream";
 #include "stdio.h";
+
 using namespace std;
 
 #ifndef CPPLEARNING_REFERENCE_H
 #define CPPLEARNING_REFERENCE_H
 
 
-
 class reference {
 
-};
 
+};
 
 
 #endif //CPPLEARNING_REFERENCE_H

@@ -6,7 +6,7 @@
 
 using namespace std;
 
-#include "template_1.h"
+#include "func_template_1.h"
 int main(){
      int a=10,b=20;
      double c=30;

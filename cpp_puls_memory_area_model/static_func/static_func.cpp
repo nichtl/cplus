@@ -7,7 +7,6 @@
 using namespace std;
 
 #include "static_func.h"
-
 int main(){
-    static_func::static_print();
+  //  static_func::static_print();
 }
