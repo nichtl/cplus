@@ -18,7 +18,7 @@ int  main(){
      */
 
 
-  string filepath = "/Users/xujian8/Desktop/demo.txt";
+  string filepath = "/Desktop/demo.txt";
   ofstream ofs; //写文件流对象
   ifstream ifs; //读
   fstream  fs; // 既读又写 ios::in | ios::out

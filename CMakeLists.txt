@@ -38,3 +38,5 @@ add_executable(dynamic_polymorphism cpp_plus_main/object_extends/polymorphism/dy
 add_executable(rwFile cpp_plus_main/readAndwriteFile/rwFile.cpp)
 add_executable(template_1 cpp_plus_main/stl/func_template_1.cpp)
 add_executable(class_template cpp_plus_main/stl/class_template.cpp)
+add_executable(Person cpp_plus_main/stl/Person.cpp)
+add_executable(class_template_friend_func cpp_plus_main/stl/class_template_friend_func.cpp)

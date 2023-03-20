@@ -26,6 +26,7 @@ public:
     void print(){
          std::cout << "m_name ="<<m_name <<",m_age="<<m_age<< std::endl;
     }
+    void showPerson_6();
     NameType m_name;
     AgeType  m_age;
 };
@@ -33,6 +34,12 @@ public:
 void  showPerson(Person<std::string,int> &p){
   p.print();
 };
+// 类外实现
+template <class  T1,class T2>
+void Person<T1,T2> ::showPerson_6() {
+     std::cout << this->m_name << std::endl;
+     std::cout << this->m_age  << std::endl;
+}
 
 // 类模板对象作函数参数  类参数模板化
 template <class  T1,class T2>
@@ -46,6 +53,9 @@ void showPerson_1(Person<T1,T2> &p){
 
 template <class  T>
 void showPerson_2(T &p){
+    if(typeid(T)== typeid(Person<>)){
+        std::cout << "person" << std::endl;
+    }
     std::cout << "T 类型 = "<< typeid(T).name()  << std::endl;
     p.print();
 }
@@ -80,6 +90,22 @@ public:
     }
 
 
+};
+
+// 类模版继承
+class myClass2 : public  myClass<Person<>>{
+public:
+    std::string  name;
+
+};
+
+template <class  T>
+class myClass3 : public  myClass<T>{
+public:
+    std::string  name;
+    void showPerson_3(){
+         std::cout << name << std::endl;
+    }
 };
 
 

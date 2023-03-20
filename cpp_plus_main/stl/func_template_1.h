@@ -14,12 +14,14 @@ class template_1 {
 
 };
 
-template<typename T > void t_swap(T &a,T &b){
+template<typename T >
+void t_swap(T &a,T &b){
     T tmp =a;
     a=b;
     b=tmp;
 }
-template <class  T> void test(){
+template <class  T>
+void test(){
      cout << 2 << endl;
 };
 
@@ -68,7 +70,6 @@ const bool  t_compare(T &a,T &b) {
 }
 
 // 模版重载 实现特定比较逻辑
-
 template <>
 const bool  t_compare(person &a,person &b) {
     if(a.m_age>b.m_age){return true;}
